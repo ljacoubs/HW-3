@@ -19,7 +19,7 @@ class PlacesController < ApplicationController
   def create 
     @place = Place.new 
 
-    puts params ["place"]
+    puts params["place"]
 
     @place["name"] = params["place"]["name"]
     @place.save
@@ -29,5 +29,11 @@ class PlacesController < ApplicationController
 
 
 # redirect user
+
+# <h2><%= @post["title"] %></h2>
+
+# <h3><%= @post["posted_on"] %></h3>
+
+# <h4><%= @post["description"] %></h4>
 
 end
